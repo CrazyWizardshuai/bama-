@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="">
+		<meta name="keywords" content="旅游,爸妈,景点,发布,文章,旅行,测评网,城市,分享,发布文章,旅游景点,分享文章,爸妈测评网,成为会员,宝妈,奶爸,孩子,宝贝" />
+		<title>发布文章</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/release.css" />
+		<link rel="stylesheet" href="css/cropper.min.css" />
+		<link rel="stylesheet" href="css/cityselect.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/release.js" ></script>
+		<script type="text/javascript" src="js/cropper.min.js" ></script>
+		<script type="text/javascript" src="js/cityselect.js" ></script>
+		<script type="text/javascript" src="js/ThirdShare.js" ></script>
+	</head>
+	<body>
+		<!--header-->
+		<!--登陆后header-->
+		<div id="pub-header">
+			<div class="header-body">
+				<a class="header-logo" href="index.html"></a>
+				<ul class="header-nav">
+					<li class="header-nav-li header-nav-li-action">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="header-nav-li">
+						<a href="share.html">分享达人</a>
+					</li>
+					<li class="header-nav-li">
+						<a href="aboutParents.html">...</a>
+					</li>
+				</ul>
+				<div class="header-function">
+					<div class="searchBox">
+						<input type="text" name="" class="header-function-search" placeholder="搜索" />
+						<img src="img/search.png" />
+					</div>
+					<a class="head-function-reg" href="register.html">注册</a>
+					<a class="head-function-login" href="landing.html">登陆</a>
+					<img src="img/Navigation.png" class="header-menu" />
+				</div>
+				<div class="searchBox2" style="margin: 10px auto 0;height: initial;" >
+					<input type="text" name="" class="header-function-search2" placeholder="寻找最省力的溜娃模式" />
+					<img src="img/search.png" />
+				</div>
+				<div class="responsive-nav">
+					<ul class="header-nav2">
+						<li class="header-nav-li2 header-nav-li-action2">
+							<a href="index.html">首页</a>
+							<a href="share.html">分享达人</a>
+							<a href="aboutParents.html">...</a>
+						</li>
+						<li class="header-nav-li2">
+							<a class="head-function-reg" href="register.html">注册</a>
+							<a class="head-function-login" href="landing.html">登陆</a>
+						</li>
+					</ul>
+					<div class="searchBox1" style="margin-left: auto;margin-right: auto;height: initial;" >
+						<input type="text" name="" class="header-function-search1" placeholder="寻找最省力的溜娃模式" />
+						<img src="img/search.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="margin: auto;background-color: #f0f1f1;overflow: hidden;">
+			<div class="release-body">
+				<div class="release-title">
+					发布文章
+				</div>
+				<form action="" method="post" class="release-form">
+					<div class="release-input1">
+						<p class="release-input-title">
+							<span class="release-input-title2"><i>●</i>标题</span>
+							<span class="release-input-title3">2-30字</span>
+						</p>
+						<input type="text" value="" maxlength="30" />
+					</div>
+					<div class="release-input2">
+						<p class="release-input-title">
+							<span class="release-input-title2"><i>●</i>类型</span>
+						</p>
+						<div class="moniSelect">
+							<span class="moniSelect-palcehoder">请选择类型</span>
+							<ul>
+								<li>类型1</li>
+								<li>类型2</li>
+								<li>类型3</li>
+								<li>类型4</li>
+								<li>类型5</li>
+							</ul>
+						</div>
+					</div>
+					<div class="release-input3">
+						<p class="release-input-title">
+							<span class="release-input-title2"><i>●</i>自定义分类</span>
+						</p>
+						<div class="moniSelect">
+							<span class="moniSelect-palcehoder">请选择分类</span>
+							<ul>
+								<li>分类1</li>
+								<li>分类2</li>
+								<li>分类3</li>
+								<li>分类4</li>
+								<li>分类5</li>
+							</ul>
+						</div>
+						
+						<div class="release-input3-add">+创建新分类</div>
+						<div class="release-input3-add2">
+							<input type="text" />
+							<div class="release-input3-add2ok" onclick="label(this)">OK</div>
+						</div>
+					</div>
+					<div class="release-input6">
+						<p class="release-input-title">
+							<span class="release-input-title2"><i>●</i>评价对象或机构名</span>
+							<span class="release-input-title3">2-30字</span>
+						</p>
+						<input type="text" value="" placeholder="" />
+					</div>
+					
+					<div class="release-input5">
+						<p class="release-input-title">
+							<span class="release-input-title2"><i>●</i>地点</span>
+							<span class="release-input-title3">城市名称</span>
+						</p>
+						<input type="text" value="" id="city" placeholder="文章事件发生地" />
+					</div>
+					<div class="release-input4">
+						<p class="release-input-title">
+							<span class="release-input-title2"><i>●</i>简介</span>
+						</p>
+						<textarea placeholder="请从是否对遛娃带娃更方便，为人父母更轻松的角度出发，来讲述优劣。"></textarea>
+						<span class="wordwrap"><var class="word">36</var> / 36</span>
+					</div>
+					<div class="release-label">
+						<div class="release-input7">
+							<p class="release-input-title">
+								<span class="release-input-title2"><i>●</i>标签</span>
+								<span class="release-input-title3">最多选择6个标签</span>
+							</p>
+							<div class="release-input7-label"></div>
+						</div>
+						<div class="release-input7-labelSelect">
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+							<span onclick="addLabel(this)">海外旅游</span>
+						</div>
+					</div>
+					<div class="release-input8">
+						<p class="release-input-title">
+							<span class="release-input-title2"><i>●</i>文章正文</span>
+						</p>
+						<div id="container" name="content" type="text/plain" style="height: 500px;"></div>
+					</div>
+					<div class="release-save">
+						<input type="button" value="保存文章">
+					</div>
+				</form>
+				<div class="release-title" style="margin-top: 20px;">
+					编辑封面
+				</div>
+				<div class="release-edit">
+					<!--<div class="chooseImg">
+						<input type="file"  />
+						<div>选择图片</div>
+					</div>
+					<div class="chooseImg2">
+					</div>
+					<div class="chooseImg3">
+						<div class="chooseImg3-left">
+							<p class="release-input-title">
+								<span class="release-input-title2"><i>●</i>封面效果预览</span>
+							</p>
+						</div>
+						<div class="chooseImg3-right">
+							<div class="release-save2">
+								<input type="button" value="保存封面">
+							</div>
+						</div>
+					</div>-->
+					
+					<div class="edit-left">
+						<div class="edit-left-title">
+							<div class="edit-left-title1">从已上传的图片中选择</div>
+							<div class="edit-left-title2">重新上传一张封面</div>
+						</div>
+						<div class="edit-left-body">
+							<div class="edit-left-body1">
+								<div class="xyImg">
+									<div class="xyImg-left">
+										<span class="xyImg-left-dq">1</span>
+										<span>/</span>
+										<span class="xyImg-left-zs">3</span>
+									</div>
+									<div class="xyImg-right" style="border-color: #46dc85;">
+										<img src="img/yixuanimg1.jpg" alt="" class="xyImg-right-img"  />
+									</div>
+								</div>
+								<div class="xyImg">
+									<div class="xyImg-left">
+										<span class="xyImg-left-dq">1</span>
+										<span>/</span>
+										<span class="xyImg-left-zs">3</span>
+									</div>
+									<div class="xyImg-right" style="border-color: #f0f1f1;">
+										<img src="img/yixuanimg1.jpg" alt="" class="xyImg-right-img" />
+									</div>
+								</div>
+								<div class="xyImg">
+									<div class="xyImg-left">
+										<span class="xyImg-left-dq">1</span>
+										<span>/</span>
+										<span class="xyImg-left-zs">3</span>
+									</div>
+									<div class="xyImg-right" style="border-color: #f0f1f1;">
+										<img src="img/yixuanimg1.jpg" alt="" class="xyImg-right-img" />
+									</div>
+								</div>
+								
+							</div>
+							<div class="edit-left-body1" style="display: none;">
+								<div class="xzImg-img">
+									<div class="xzImg-img1">
+										<p>5MB以内/RGB模式<br />建议尺寸：256×181<br />支持格式 ：jpg/gif/png</p>
+									</div>
+									<!--<div class="xzImg-img1"></div>-->
+									<!--<input type="button" class="xzImg-btn" value="选择图片" />-->
+									<div class="chooseImg">
+										<input type="file"  />
+										<div>选择图片</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="edit-right">
+						<div id="" class="edit-right-div" >
+							<p class="release-input-title" style="margin-top: 42px;">
+								<span class="release-input-title2"><i>●</i>封面效果预览</span>
+							</p>
+							<div class="ylImg">
+								<div class="chooseImg3-left">
+									
+								</div>
+								<input type="button" value="保存封面" class="ylImg-save">
+							</div>
+							<div class="cjImg">
+								<!--<img src="img/yixuanimg1.jpg" alt="" class="cjImg-img" />-->
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="release-ok">
+					<input type="button" class="release-ok-fabu" value="发布文章" />
+					<input type="button" class="release-ok-bccg" value="保存草稿" />
+					<input type="button" class="release-ok-ylwz" value="预览文章" />
+				</div>
+			</div>
+		</div>
+		
+		<!--foot-->
+		<div id="pub-foot">
+			<div class="foot-body">
+				<div class="foot-left">
+					<img src="img/footLogo.png" class="foot-left-logo" />
+					<div class="foot-left-info">
+						<div class="foot-left-a">
+							<a href="aboutParents.html">关于我们</a>
+							<a href="aboutParents-6.html">联系与合作</a>
+							<a href="#" style="margin-right: 0;">新手指南</a>
+						</div>
+						<div class="foot-left-text">
+							<p class="foot-left-text-p">
+								亲子游论坛版权所有   沪ICP备08808088号<br />
+								Copyright@2016 XXXX.com All Rights Reserved
+							</p>
+							<img src="img/footImg.png" class="foot-left-text-img"/>
+						</div>
+					</div>
+				</div>
+				<div class="foot-right">
+					<div class="foot-right-share">
+						<a href="javascript:" style="margin-left: 0;" onclick="shareToSinaWB(event)">
+							<img src="img/share1.png" />
+						</a>
+						<a href="javascript:" onclick="shareToQQwb(event)">
+							<img src="img/share2.png" />
+						</a>
+						<a href="javascript:" onclick="shareToQzone(event)">
+							<img src="img/share3.png" />
+						</a>
+						<a href="javascript:" class="jiathis_button_weixin">
+							<img src="img/share4.png" />
+						</a>
+					</div>
+					<img src="img/qrcode.png" class="foot-right-qrcode" />
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>		
+		<script type="text/javascript" src="js/ueditor.config.js" ></script>
+		<script type="text/javascript" src="js/ueditor.all.min.js" ></script>
+		<script type="text/javascript" src="js/lang/zh-cn/zh-cn.js" ></script>
+		<!--<script type="text/javascript" src="js/ueditor.parse.js" ></script>-->
+		<script>
+			var ue = UE.getEditor('container',{
+				toolbars: [
+			    	['fullscreen', 'undo', 'redo','bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'simpleupload' , 'insertimage' ,'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc']
+			    ]
+			});
+			var city=new Vcity.CitySelector({input:'city'});
+		</script>
+	</body>
+</html>

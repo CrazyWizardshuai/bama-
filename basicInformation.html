@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="">
+		<meta name="keywords" content="旅游,爸妈,景点,发布,文章,旅行,测评网,城市,分享,发布文章,旅游景点,分享文章,爸妈测评网,成为会员,宝妈,奶爸,孩子,宝贝" />
+		<title>个人信息-基本信息</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/Basic-information.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/Basic-information.js" ></script>
+		<!--<script type="text/javascript" src="js/address.js" ></script>-->
+		<script type="text/javascript" src="js/ThirdShare.js" ></script>
+	</head>
+	<body>
+		<!--header-->
+		<!--登陆后header-->
+		<div id="pub-header">
+			<div class="header-body">
+				<a class="header-logo" href="index.html"></a>
+				<ul class="header-nav">
+					<li class="header-nav-li header-nav-li-action">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="header-nav-li">
+						<a href="share.html">分享达人</a>
+					</li>
+					<li class="header-nav-li">
+						<a href="aboutParents.html">...</a>
+					</li>
+				</ul>
+				<div class="header-function">
+					<div class="searchBox">
+						<input type="text" name="" class="header-function-search" placeholder="搜索" />
+						<img src="img/search.png" />
+					</div>
+					<a class="head-function-reg" href="register.html">注册</a>
+					<a class="head-function-login" href="landing.html">登陆</a>
+					<img src="img/Navigation.png" class="header-menu" />
+				</div>
+				<div class="searchBox2" style="margin: 10px auto 0;height: initial;" >
+					<input type="text" name="" class="header-function-search2" placeholder="寻找最省力的溜娃模式" />
+					<img src="img/search.png" />
+				</div>
+				<div class="responsive-nav">
+					<ul class="header-nav2">
+						<li class="header-nav-li2 header-nav-li-action2">
+							<a href="index.html">首页</a>
+							<a href="share.html">分享达人</a>
+							<a href="aboutParents.html">...</a>
+						</li>
+						<li class="header-nav-li2">
+							<a class="head-function-reg" href="register.html">注册</a>
+							<a class="head-function-login" href="landing.html">登陆</a>
+						</li>
+					</ul>
+					<div class="searchBox1" style="margin-left: auto;margin-right: auto;height: initial;" >
+						<input type="text" name="" class="header-function-search1" placeholder="寻找最省力的溜娃模式" />
+						<img src="img/search.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="content" class="contentZ">
+			<div class="MK">
+				<p>个人信息</p>
+				<hr />
+				<!--选项卡-->
+				<div class="MKul">
+					<div>
+						<div id="border"><a id="selected" href="basicInformation.html">基本信息</a></div>
+						<div><a  href="modifyAvatar.html">修改头像</a></div>
+					</div>
+					<div>
+						<div><a href="accountSecurity.html">账号安全</a></div>
+						<div><a href="customTaxonomy.html" style="margin-left: 0px;">自定义分类</a></div>
+					</div>
+				</div>
+				<!--选项卡切换-->
+				<div style="clear: both;"></div>
+				<div class="MKcontent">
+					<div>
+						<span>必填项</span>
+						<span>选填项</span>
+					</div>
+					
+					<form>
+						<!--左边DIV-->
+						<div class="left">
+							<div class="LE">
+								<p>用户名</p>
+								<span>2-10字</span>
+								<input  type="text" id="myUser"/>
+							</div>
+							<div class="DZ">
+								
+								<div id="sjld" style="width:54%;position:relative;margin-bottom: 20px;display: inline-block;">
+									<p>家乡</p>
+									<input class="m_zlxg"  id="shenfen" type="text" style="text-indent:  0.5em;"/>
+										<!--<p title="" class="onchange">请选择</p>
+										<div class="m_zlxg2" style="width: 103px !important;left: 0px;">
+											<ul style="z-index: 9999 !important;"></ul>
+										</div>-->
+									<!--</div>-->
+									<input class="m_zlxg "  id="chengshi" style="width: 50%;text-indent: 0.5em;" type="text" />
+										<!--<p title="" class="onchange">请选择</p>
+										<div class="m_zlxg2" style="width: 151px !important;left: 115px;">
+											<ul></ul>
+										</div>-->
+									<!--</div>-->
+									<!--<input id="sfdq_num" type="hidden" value="" />
+									<input id="csdq_num" type="hidden" value="" />
+									<input id="sfdq_tj" type="hidden" value="" />
+									<input id="csdq_tj" type="hidden" value="" />
+									<input id="qydq_tj" type="hidden" value="" />-->
+								</div>
+								<div id="Sex">
+									<span id="sex">性别</span>
+									<div>
+										<a></a>
+										<ul>
+											<li>奶爸</li>
+											<li>宝妈</li>
+										</ul>
+										<input type="text" class="margin" id="mySex" disabled="disabled" value="奶爸"/>
+									</div>
+									<div>
+										<a></a>
+										<ul>
+											<li>所有人可见</li>
+											<li>会员可见</li>
+											<li>仅自己可见</li>
+											<li>保密</li>
+										</ul>
+										<input type="text" value="所有人可见" disabled="disabled" style="margin: 0px;"/>
+									</div>
+									
+								</div>
+							</div>
+							<div class="E">
+								<p>邮箱</p>
+								<input type="email" id="myEmail"/>
+							</div>
+							<div class="T">
+								<p>手机号</p>
+								<input type="tel" min="11" maxlength="11" id="myTel"/>
+							</div>
+						</div>
+						<!--右边DIV-->
+						<div class="right">
+								<div id="Dright">
+									<div class="DT">
+										<span>真实姓名</span>
+										<input type="text" class="margin" id="myName" />
+									</div>
+									<div class="DR">
+										<a></a>
+										<ul>
+											<li>所有人可见</li>
+											<li>会员可见</li>
+											<li>仅自己可见</li>
+											<li>保密</li>
+										</ul>
+										<input type="text" value="所有人可见" disabled="disabled" style="width:100%;"/>
+									</div>
+								</div>
+								<div id="Dleft">
+									<div class="TL">
+										<span id="baby">宝贝年龄</span>
+										<input type="text" class="margin" id="myBaby" value="1岁"/>
+									</div>
+										<div class="TR">
+											<a></a>
+											<ul>
+												<li>所有人可见</li>
+												<li>会员可见</li>
+												<li>仅自己可见</li>
+												<li>保密</li>
+											</ul>
+											<span id="rightBaby">便于找到同年龄的宝爸妈贴</span>
+											<input type="text" value="所有人可见" disabled="disabled" style="margin: 0px;"/>
+										</div>
+									</div>
+							<div>
+								<div class="signature">
+									<p>个性签名</p>
+									<input type="text" placeholder="让大家多了解你一丢丢" id="mySignature"/>
+									<span class="wordwrap"><span class="word">0</span>/24</span>
+								</div>
+								<div class="birthday">
+									<div>
+										<p>生日</p>
+										<div class="birthdayDiv BM">
+											<a></a>
+											<ul class="birthdayDivL" id="year"></ul>
+											<input type="text" maxlength="4" min="4" disabled="disabled" value="2016" id="myYear"/>
+										</div>
+										<div class="birthdayDiv BM">
+											<a></a>
+											<ul class="birthdayDivL" id="Moth"></ul>
+											<input type="text" maxlength="4" min="4" disabled="disabled" value="1" name="1" id="myMoth"/>
+										</div >
+										<div class="birthdayDiv BM">
+											<a></a>
+											<ul class="birthdayDivL" id="Day"></ul>
+											<input type="text" maxlength="4" min="4" disabled="disabled" value="1" id="myDay" />
+										</div>
+										<div class="birthdayDiv">
+											<a></a>
+											<ul>
+												<li>所有人可见</li>
+												<li>会员可见</li>
+												<li>仅自己可见</li>
+												<li>保密</li>
+											</ul>
+											<input type="text" maxlength="4" min="4" disabled="disabled"   value="所有人可见"/>
+										</div>
+										
+									</div>
+										<div class="QQnumber">
+											<div class="QL">
+												<span>QQ号</span>
+												<input type="text" maxlength="11" min="4"   id="myQQ"/>
+											</div>
+											<div class="QQLeft">
+												<a></a>
+												<ul>
+													<li>所有人可见</li>
+													<li>会员可见</li>
+													<li>仅自己可见</li>
+													<li>保密</li>
+												</ul>
+												<input type="text"  disabled="disabled" value="所有人可见"/>
+											</div>
+											<div class="QL">
+												<span>微信号</span>
+												<input type="text" maxlength="15" min="5"  id="myWechat"/>
+											</div>
+											<div class="QQrigth">
+												<a></a>
+												<ul>
+													<li>所有人可见</li>
+													<li>会员可见</li>
+													<li>仅自己可见</li>
+													<li>保密</li>
+												</ul>
+												<input type="text" maxlength="4" min="4" disabled="disabled"   value="所有人可见"/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="text-align: center;margin-bottom: 0px;" id="submit">
+							<input type="submit" value="确认修改" class="submit" disabled="disabled"/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<!--foot-->
+		<div id="pub-foot">
+			<div class="foot-body">
+				<div class="foot-left">
+					<img src="img/footLogo.png" class="foot-left-logo" />
+					<div class="foot-left-info">
+						<div class="foot-left-a">
+							<a href="aboutParents.html">关于我们</a>
+							<a href="aboutParents-6.html">联系与合作</a>
+							<a href="#" style="margin-right: 0;">新手指南</a>
+						</div>
+						<div class="foot-left-text">
+							<p class="foot-left-text-p">
+								亲子游论坛版权所有   沪ICP备08808088号<br />
+								Copyright@2016 XXXX.com All Rights Reserved
+							</p>
+							<img src="img/footImg.png" class="foot-left-text-img"/>
+						</div>
+					</div>
+				</div>
+				<div class="foot-right">
+					<div class="foot-right-share">
+						<a href="javascript:" style="margin-left: 0;" onclick="shareToSinaWB(event)">
+							<img src="img/share1.png" />
+						</a>
+						<a href="javascript:" onclick="shareToQQwb(event)">
+							<img src="img/share2.png" />
+						</a>
+						<a href="javascript:" onclick="shareToQzone(event)">
+							<img src="img/share3.png" />
+						</a>
+						<a href="javascript:" class="jiathis_button_weixin">
+							<img src="img/share4.png" />
+						</a>
+					</div>
+					<img src="img/qrcode.png" class="foot-right-qrcode" />
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			$(function(){
+			
+				$("#sjld").sjld("#shenfen","#chengshi","#quyu");
+				
+			});
+		</script>-->
+	</body>
+</html>
